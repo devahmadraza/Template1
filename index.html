@@ -893,7 +893,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
   var tx=0,ty=0,scrolling=false;
   document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;scrolling=false},{passive:true});
   document.addEventListener('touchmove',function(e){
-    var dx=Math.abs(e.togit inituches[0].clientX-tx);
+    var dx=Math.abs(e.touches[0].clientX-tx);
     var dy=Math.abs(e.touches[0].clientY-ty);
     if(dy>dx)scrolling=true;
   },{passive:true});
